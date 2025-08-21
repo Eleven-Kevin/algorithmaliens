@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Instagram, Mail, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Footer() {
@@ -44,17 +44,17 @@ export default function Footer() {
           <div className="md:justify-self-end">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">Connect</h3>
             <div className="mt-4 flex justify-center md:justify-start space-x-2">
-              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-foreground hover:text-background">
-                <Link href="#" aria-label="Github">
-                  <Github className="h-5 w-5" />
+              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-accent hover:text-accent-foreground">
+                <Link href="mailto:contact@algorithmaliens.com" aria-label="Email">
+                  <Mail className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-foreground hover:text-background">
-                <Link href="#" aria-label="Twitter">
-                  <Twitter className="h-5 w-5" />
+              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-accent hover:text-accent-foreground">
+                <Link href="#" aria-label="Instagram">
+                  <Instagram className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-foreground hover:text-background">
+              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-accent hover:text-accent-foreground">
                 <Link href="#" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
                 </Link>
