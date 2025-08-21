@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import QueryForm from './query-form';
 
 const faqs = [
   {
@@ -80,6 +81,9 @@ export default function HelpSection() {
               </Accordion>
             </div>
           ))}
+        </div>
+        <div className="mt-20">
+          <QueryForm />
         </div>
       </div>
     </section>
