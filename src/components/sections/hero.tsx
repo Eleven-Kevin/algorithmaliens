@@ -31,7 +31,8 @@ export default function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="font-semibold rounded-full bg-accent text-accent-foreground transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 hover:bg-background hover:text-foreground"
+              variant="outline"
+              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary/10 "
             >
               <Link href="/resources">Explore Resources</Link>
             </Button>
@@ -39,7 +40,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary hover:text-primary-foreground"
+              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary/10 "
             >
               <Link href="#about">About Us</Link>
             </Button>
@@ -47,7 +48,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary hover:text-primary-foreground"
+              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary/10 "
             >
               <Link href="https://forms.gle/1aeeAnHfuCPa2fqP7" target="_blank">
                 Request Services
