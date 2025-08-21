@@ -28,7 +28,7 @@ export default function HeroSection() {
           <Button
             asChild
             size="lg"
-            className="text-lg px-8 h-14 rounded-full font-semibold bg-accent text-accent-foreground transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20"
+            className="text-lg px-8 h-14 rounded-full font-semibold bg-accent text-accent-foreground transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 hover:bg-background hover:text-foreground"
           >
             <Link href="#about">Explore Our World</Link>
           </Button>

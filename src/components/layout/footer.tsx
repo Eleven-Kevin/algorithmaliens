@@ -39,17 +39,17 @@ export default function Footer() {
           <div className="md:justify-self-end">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">Connect</h3>
             <div className="mt-4 flex justify-center md:justify-start space-x-2">
-              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:text-foreground">
+              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-foreground hover:text-background">
                 <Link href="#" aria-label="Github">
                   <Github className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:text-foreground">
+              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-foreground hover:text-background">
                 <Link href="#" aria-label="Twitter">
                   <Twitter className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:text-foreground">
+              <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-foreground hover:text-background">
                 <Link href="#" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
                 </Link>

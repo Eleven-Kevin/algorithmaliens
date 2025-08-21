@@ -35,7 +35,7 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="bg-accent text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/20">
+            <Button asChild className="bg-accent text-accent-foreground transition-all duration-300 hover:bg-background hover:text-foreground hover:shadow-lg hover:shadow-accent/20">
               <Link href="#contact">Get Started</Link>
             </Button>
           </nav>
@@ -73,7 +73,7 @@ export default function Header() {
                         {link.label}
                       </Link>
                     ))}
-                    <Button asChild className="w-full mt-4" onClick={() => setIsOpen(false)}>
+                    <Button asChild className="w-full mt-4 bg-accent text-accent-foreground hover:bg-background hover:text-foreground" onClick={() => setIsOpen(false)}>
                       <Link href="#contact">Get Started</Link>
                     </Button>
                   </nav>
