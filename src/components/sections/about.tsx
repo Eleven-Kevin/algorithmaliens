@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 export default function AboutSection() {
   return (
@@ -48,15 +47,6 @@ export default function AboutSection() {
               Our commitment to excellence and innovation continues to drive our growth and impact
               in the education sector.
             </p>
-             <div className="relative aspect-video">
-                <Image
-                  src="https://placehold.co/600x338.png"
-                  alt="Team working on projects"
-                  fill
-                  className="rounded-lg shadow-2xl object-cover"
-                  data-ai-hint="team collaboration"
-                />
-              </div>
           </div>
         </div>
       </div>
