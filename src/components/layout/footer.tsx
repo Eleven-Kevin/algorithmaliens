@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-background border-t border-border/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <div>
             <h3 className="text-lg font-semibold text-foreground">Algorithm Aliens</h3>
             <p className="mt-2 text-sm text-foreground/60">Empower Your Future Through Learning.</p>
@@ -40,6 +40,17 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="md:justify-self-center">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">Office</h3>
+            <p className="mt-2 text-sm text-foreground/60">
+                Lb Nagar<br />
+                Hyderabad City, Telangana, 500001
+            </p>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80 mt-4">Phone</h3>
+            <p className="mt-2 text-sm text-foreground/60">
+                9063674418
+            </p>
           </div>
           <div className="md:justify-self-end">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">Connect</h3>
