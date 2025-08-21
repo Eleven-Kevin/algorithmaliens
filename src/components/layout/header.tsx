@@ -7,9 +7,9 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 import { Menu } from 'lucide-react';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#resources', label: 'Resources' },
-  { href: '#help', label: 'Help' },
+  { href: '/#about', label: 'About' },
+  { href: '/resources', label: 'Resources' },
+  { href: '/#help', label: 'Help' },
 ];
 
 export default function Header() {
@@ -20,7 +20,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link
-            href="#home"
+            href="/#home"
             className="text-2xl font-bold tracking-tight text-foreground transition-colors hover:text-primary"
           >
             Algorithm Aliens
@@ -35,7 +35,7 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="bg-primary text-primary-foreground transition-all duration-300 hover:bg-background hover:text-foreground hover:shadow-lg hover:shadow-primary/20">
+            <Button asChild className="bg-accent text-accent-foreground transition-all duration-300 hover:bg-background hover:text-foreground hover:shadow-lg hover:shadow-primary/20">
               <Link href="#contact">Get Started</Link>
             </Button>
           </nav>

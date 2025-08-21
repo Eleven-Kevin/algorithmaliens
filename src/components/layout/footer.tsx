@@ -15,22 +15,22 @@ export default function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">Navigate</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="#home" className="text-sm text-foreground/60 hover:text-foreground">
+                <Link href="/#home" className="text-sm text-foreground/60 hover:text-foreground">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-sm text-foreground/60 hover:text-foreground">
+                <Link href="/#about" className="text-sm text-foreground/60 hover:text-foreground">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#resources" className="text-sm text-foreground/60 hover:text-foreground">
+                <Link href="/resources" className="text-sm text-foreground/60 hover:text-foreground">
                   Resources
                 </Link>
               </li>
               <li>
-                <Link href="#help" className="text-sm text-foreground/60 hover:text-foreground">
+                <Link href="/#help" className="text-sm text-foreground/60 hover:text-foreground">
                   Help
                 </Link>
               </li>
