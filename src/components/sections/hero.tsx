@@ -31,7 +31,7 @@ export default function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="text-lg px-8 h-14 rounded-full font-semibold bg-accent text-accent-foreground transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 hover:bg-background hover:text-foreground"
+              className="font-semibold rounded-full bg-accent text-accent-foreground transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 hover:bg-background hover:text-foreground"
             >
               <Link href="/resources">Explore Resources</Link>
             </Button>
@@ -39,7 +39,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 h-14 rounded-full font-semibold border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary hover:text-primary-foreground"
+              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary hover:text-primary-foreground"
             >
               <Link href="#about">About Us</Link>
             </Button>
@@ -47,7 +47,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 h-14 rounded-full font-semibold border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary hover:text-primary-foreground"
+              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 hover:bg-primary hover:text-primary-foreground"
             >
               <Link href="https://forms.gle/1aeeAnHfuCPa2fqP7" target="_blank">
                 Request Services
