@@ -45,12 +45,12 @@ export default function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">Connect</h3>
             <div className="mt-4 flex justify-center md:justify-start space-x-2">
               <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-accent hover:text-accent-foreground">
-                <Link href="mailto:contact@algorithmaliens.com" aria-label="Email">
+                <Link href="mailto:support@algorithmaliens.com" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-accent hover:text-accent-foreground">
-                <Link href="#" aria-label="Instagram">
+                <Link href="https://www.instagram.com/algorithmaliens/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-5 w-5" />
                 </Link>
               </Button>
