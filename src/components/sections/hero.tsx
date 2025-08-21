@@ -27,7 +27,7 @@ export default function HeroSection() {
             Discover cutting-edge courses, certifications, and internship opportunities to
             accelerate your career growth.
           </p>
-          <div className="flex justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
             <Button
               asChild
               size="lg"
