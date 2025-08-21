@@ -10,7 +10,7 @@ export default function HeroSection() {
     >
       <div
         className="absolute top-0 left-0 w-full h-full parallax-bg"
-        style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1920&h=1080&auto=format&fit=crop')" }}
         data-ai-hint="abstract monochrome"
       >
         <div className="absolute top-0 left-0 w-full h-full bg-black/70"></div>
