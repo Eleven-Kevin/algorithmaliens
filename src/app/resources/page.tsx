@@ -1,8 +1,10 @@
+'use client';
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Clock } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const internships = [
   {
@@ -116,57 +118,64 @@ export default function ResourcesPage() {
           </p>
         </div>
 
-        <section id="internships">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">Internships</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {internships.map((item, index) => (
-              <Card key={index} className="h-full flex flex-col bg-card border-border/50 transition-all duration-300 ease-in-out hover:border-accent/80 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
-                <CardHeader>
-                  <CardTitle>{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <CardDescription>{item.description}</CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between items-center">
-                   <div className="flex items-center text-sm text-muted-foreground">
-                      <Clock className="h-4 w-4 mr-2" />
-                      <span>{item.duration}</span>
-                    </div>
-                  <Button asChild variant="outline">
-                    <Link href="#">Apply Now</Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </section>
+        <Tabs defaultValue="internships" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-12">
+            <TabsTrigger value="internships">Internships</TabsTrigger>
+            <TabsTrigger value="certifications">Certifications</TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="internships">
+            <section id="internships">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {internships.map((item, index) => (
+                  <Card key={index} className="h-full flex flex-col bg-card border-border/50 transition-all duration-300 ease-in-out hover:border-accent/80 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
+                    <CardHeader>
+                      <CardTitle>{item.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <CardDescription>{item.description}</CardDescription>
+                    </CardContent>
+                    <CardFooter className="flex justify-between items-center">
+                      <div className="flex items-center text-sm text-muted-foreground">
+                          <Clock className="h-4 w-4 mr-2" />
+                          <span>{item.duration}</span>
+                        </div>
+                      <Button asChild variant="outline">
+                        <Link href="#">Apply Now</Link>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+              </div>
+            </section>
+          </TabsContent>
 
-        <Separator className="my-16 md:my-24" />
-
-        <section id="certifications">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">Certifications</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certifications.map((item, index) => (
-              <Card key={index} className="h-full flex flex-col bg-card border-border/50 transition-all duration-300 ease-in-out hover:border-accent/80 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
-                <CardHeader>
-                  <CardTitle>{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <CardDescription>{item.description}</CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between items-center">
-                   <div className="flex items-center text-sm text-muted-foreground">
-                      <Clock className="h-4 w-4 mr-2" />
-                      <span>{item.duration}</span>
-                    </div>
-                  <Button asChild variant="outline">
-                    <Link href="#">Apply Now</Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </section>
+          <TabsContent value="certifications">
+            <section id="certifications">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {certifications.map((item, index) => (
+                  <Card key={index} className="h-full flex flex-col bg-card border-border/50 transition-all duration-300 ease-in-out hover:border-accent/80 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
+                    <CardHeader>
+                      <CardTitle>{item.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <CardDescription>{item.description}</CardDescription>
+                    </CardContent>
+                    <CardFooter className="flex justify-between items-center">
+                      <div className="flex items-center text-sm text-muted-foreground">
+                          <Clock className="h-4 w-4 mr-2" />
+                          <span>{item.duration}</span>
+                        </div>
+                      <Button asChild variant="outline">
+                        <Link href="#">Apply Now</Link>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+              </div>
+            </section>
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
