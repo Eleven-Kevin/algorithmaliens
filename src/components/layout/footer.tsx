@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
             <h3 className="text-lg font-semibold text-foreground">Algorithm Aliens</h3>
-            <p className="mt-2 text-sm text-foreground/60">Decoding the Future.</p>
+            <p className="mt-2 text-sm text-foreground/60">Empower Your Future Through Learning.</p>
           </div>
           <div className="md:justify-self-center">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">Navigate</h3>
@@ -17,6 +17,11 @@ export default function Footer() {
               <li>
                 <Link href="/#home" className="text-sm text-foreground/60 hover:text-foreground">
                   Home
+                </Link>
+              </li>
+               <li>
+                <Link href="/#how-to-apply" className="text-sm text-foreground/60 hover:text-foreground">
+                  How to Apply
                 </Link>
               </li>
               <li>
@@ -31,7 +36,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/#help" className="text-sm text-foreground/60 hover:text-foreground">
-                  Help
+                  FAQs
                 </Link>
               </li>
             </ul>

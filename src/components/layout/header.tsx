@@ -7,9 +7,10 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 import { Menu } from 'lucide-react';
 
 const navLinks = [
+  { href: '/#how-to-apply', label: 'How to Apply' },
   { href: '/#about', label: 'About' },
   { href: '/resources', label: 'Resources' },
-  { href: '/#help', label: 'Help' },
+  { href: '/#help', label: 'FAQs' },
 ];
 
 export default function Header() {
