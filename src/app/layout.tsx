@@ -7,6 +7,9 @@ import Footer from '@/components/layout/footer';
 export const metadata: Metadata = {
   title: 'Algorithm Aliens',
   description: 'Decoding the Future, One Algorithm at a Time.',
+  icons: {
+    icon: '/favicon.jpeg',
+  },
 };
 
 export default function RootLayout({
@@ -17,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" href="/favicon.jpeg" />
+        <link rel="icon" href="/favicon.jpeg" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
           rel="stylesheet"
