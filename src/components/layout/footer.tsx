@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-background border-t border-border/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
           <div>
             <h3 className="text-lg font-semibold text-foreground">Algorithm Aliens</h3>
             <p className="mt-2 text-sm text-foreground/60">Empower Your Future Through Learning.</p>
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
           <div className="md:justify-self-end">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">Connect</h3>
-            <div className="mt-4 flex justify-center md:justify-start space-x-2">
+            <div className="mt-4 flex justify-start space-x-2">
               <Button asChild variant="ghost" size="icon" className="text-foreground/60 hover:bg-accent hover:text-accent-foreground">
                 <Link href="mailto:support@algorithmaliens.com" aria-label="Email">
                   <Mail className="h-5 w-5" />
