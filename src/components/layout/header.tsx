@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 
 const navLinks = [
@@ -48,8 +48,8 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="bg-background">
-                <div className="flex flex-col h-full">
-                  <div className="flex justify-between items-center p-4 border-b">
+                <SheetHeader className="p-4 border-b text-left">
+                  <SheetTitle>
                     <Link
                       href="#home"
                       className="text-xl font-bold tracking-tight text-foreground"
@@ -57,7 +57,9 @@ export default function Header() {
                     >
                       Algorithm Aliens
                     </Link>
-                  </div>
+                  </SheetTitle>
+                </SheetHeader>
+                <div className="flex flex-col h-full">
                   <nav className="flex flex-col items-start space-y-4 p-4">
                     {navLinks.map((link) => (
                       <Link
