@@ -52,9 +52,9 @@ export default function QueryForm() {
   }
 
   return (
-    <Card className="max-w-2xl mx-auto bg-card border-border/50">
+    <Card className="max-w-2xl mx-auto bg-card border-border">
       <CardHeader>
-        <CardTitle className="text-center text-3xl font-bold text-primary">Submit Your Query</CardTitle>
+        <CardTitle className="text-center text-3xl font-bold">Submit Your Query</CardTitle>
       </CardHeader>
       <CardContent>
         <Form {...form}>

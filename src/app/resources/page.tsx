@@ -113,7 +113,7 @@ export default function ResourcesPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Resources</h1>
-          <p className="mt-4 text-lg text-foreground/80">
+          <p className="mt-4 text-lg text-muted-foreground">
             Expand your skills with our internships and certification programs.
           </p>
         </div>
@@ -128,7 +128,7 @@ export default function ResourcesPage() {
             <section id="internships">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {internships.map((item, index) => (
-                  <Card key={index} className="h-full flex flex-col bg-card border-border/50 transition-all duration-300 ease-in-out hover:border-accent/80 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
+                  <Card key={index} className="h-full flex flex-col bg-card border transition-all duration-300 ease-in-out hover:border-primary/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
                     <CardHeader>
                       <CardTitle>{item.title}</CardTitle>
                     </CardHeader>
@@ -140,7 +140,7 @@ export default function ResourcesPage() {
                           <Clock className="h-4 w-4 mr-2" />
                           <span>{item.duration}</span>
                         </div>
-                      <Button asChild variant="outline">
+                      <Button asChild>
                         <Link href="#">Apply Now</Link>
                       </Button>
                     </CardFooter>
@@ -154,7 +154,7 @@ export default function ResourcesPage() {
             <section id="certifications">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {certifications.map((item, index) => (
-                  <Card key={index} className="h-full flex flex-col bg-card border-border/50 transition-all duration-300 ease-in-out hover:border-accent/80 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
+                  <Card key={index} className="h-full flex flex-col bg-card border transition-all duration-300 ease-in-out hover:border-primary/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
                     <CardHeader>
                       <CardTitle>{item.title}</CardTitle>
                     </CardHeader>
@@ -166,7 +166,7 @@ export default function ResourcesPage() {
                           <Clock className="h-4 w-4 mr-2" />
                           <span>{item.duration}</span>
                         </div>
-                      <Button asChild variant="outline">
+                      <Button asChild>
                         <Link href="#">Apply Now</Link>
                       </Button>
                     </CardFooter>

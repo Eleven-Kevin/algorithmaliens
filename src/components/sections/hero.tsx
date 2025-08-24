@@ -20,10 +20,10 @@ export default function HeroSection() {
           className="animate-fade-in-up"
           style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
         >
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 [text-wrap:balance]">
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 [text-wrap:balance] text-white">
             Empower Your Future Through Learning
           </h1>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-foreground/80 mb-8">
+          <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/80 mb-8">
             Discover cutting-edge courses, certifications, and internship opportunities to
             accelerate your career growth.
           </p>
@@ -32,7 +32,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 bg-transparent"
+              className="font-semibold rounded-full text-white"
             >
               <Link href="/resources">Explore Resources</Link>
             </Button>
@@ -40,7 +40,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 bg-transparent"
+              className="font-semibold rounded-full text-white"
             >
               <Link href="#about">About Us</Link>
             </Button>
@@ -48,7 +48,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="font-semibold rounded-full border-primary text-primary transition-all duration-300 bg-transparent"
+              className="font-semibold rounded-full text-white"
             >
               <Link href="https://forms.gle/1aeeAnHfuCPa2fqP7" target="_blank">
                 Request Services
@@ -62,31 +62,31 @@ export default function HeroSection() {
           style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
           <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border/50">
-            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3">
-              <FileText className="text-primary" />
+            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
+              <FileText className="text-primary-foreground" />
               Our Company
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-white/80">
               Since 2025, we've transformed education, serving thousands with quality resources and
               career opportunities.
             </p>
           </div>
           <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border/50">
-            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3">
-              <Briefcase className="text-primary" />
+            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
+              <Briefcase className="text-primary-foreground" />
               Our Agenda
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-white/80">
               We provide accessible education, industry-relevant certifications, and real-world
               internships to build a supportive learning community.
             </p>
           </div>
           <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border/50">
-            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3">
-              <Target className="text-primary" />
+            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
+              <Target className="text-primary-foreground" />
               Our Projects
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-white/80">
               Engage with our innovative working projects. You can buy pre-designed projects or collaborate on new designs.
             </p>
           </div>

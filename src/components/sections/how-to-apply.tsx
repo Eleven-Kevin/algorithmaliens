@@ -51,11 +51,11 @@ const postCompletionSteps = [
 
 export default function HowToApplySection() {
   return (
-    <section id="how-to-apply" className="bg-primary text-primary-foreground py-20 md:py-32">
+    <section id="how-to-apply" className="bg-secondary text-secondary-foreground py-20 md:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">How to Apply for an Internship</h2>
-          <p className="mt-4 text-lg text-primary-foreground/80 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Follow these steps to join our internship program and kickstart your career.
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function HowToApplySection() {
                     </div>
                     <div>
                     <h4 className="font-semibold">{step.title}</h4>
-                    <p className="text-primary-foreground/80">{step.description}</p>
+                    <p className="text-muted-foreground">{step.description}</p>
                     </div>
                 </div>
                 ))}
@@ -80,10 +80,10 @@ export default function HowToApplySection() {
                 <h3 className="text-2xl font-semibold text-center">Post-Application</h3>
                  {postApplicationSteps.map((step, index) => (
                 <div key={index} className="flex items-start gap-4">
-                    <CheckCircle className="flex-shrink-0 h-8 w-8 text-background" />
+                    <CheckCircle className="flex-shrink-0 h-8 w-8 text-primary" />
                     <div>
                     <h4 className="font-semibold">{step.title}</h4>
-                    <p className="text-primary-foreground/80">{step.description}</p>
+                    <p className="text-muted-foreground">{step.description}</p>
                     </div>
                 </div>
                 ))}
@@ -93,10 +93,10 @@ export default function HowToApplySection() {
                 <h3 className="text-2xl font-semibold text-center">Post-Completion</h3>
                  {postCompletionSteps.map((step, index) => (
                 <div key={index} className="flex items-start gap-4">
-                     <CheckCircle className="flex-shrink-0 h-8 w-8 text-background" />
+                     <CheckCircle className="flex-shrink-0 h-8 w-8 text-primary" />
                     <div>
                     <h4 className="font-semibold">{step.title}</h4>
-                    <p className="text-primary-foreground/80">{step.description}</p>
+                    <p className="text-muted-foreground">{step.description}</p>
                     </div>
                 </div>
                 ))}

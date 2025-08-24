@@ -31,12 +31,12 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="bg-accent text-accent-foreground transition-all duration-300 hover:bg-background hover:text-foreground hover:shadow-lg hover:shadow-primary/20">
+            <Button asChild>
               <Link href="#contact">Get Started</Link>
             </Button>
           </nav>
@@ -66,13 +66,13 @@ export default function Header() {
                       <Link
                         key={link.href}
                         href={link.href}
-                        className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
+                        className="text-lg font-medium text-muted-foreground transition-colors hover:text-foreground"
                         onClick={() => setIsOpen(false)}
                       >
                         {link.label}
                       </Link>
                     ))}
-                    <Button asChild className="w-full mt-4 bg-primary text-primary-foreground hover:bg-background hover:text-foreground" onClick={() => setIsOpen(false)}>
+                    <Button asChild className="w-full mt-4" onClick={() => setIsOpen(false)}>
                       <Link href="#contact">Get Started</Link>
                     </Button>
                   </nav>
