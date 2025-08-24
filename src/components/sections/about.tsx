@@ -21,8 +21,8 @@ export default function AboutSection() {
               <Image
                 src="/mission.svg"
                 alt="Our Mission"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 className="mx-auto mb-4"
               />
               <h3 className="text-2xl font-semibold mb-3">Our Mission</h3>
@@ -35,8 +35,8 @@ export default function AboutSection() {
               <Image
                 src="/values.svg"
                 alt="Our Values"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 className="mx-auto mb-4"
               />
               <h3 className="text-2xl font-semibold mb-3">Our Values</h3>
@@ -51,8 +51,8 @@ export default function AboutSection() {
               <Image
                 src="/working-projects.svg"
                 alt="Working Projects"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 className="mx-auto mb-4"
               />
               <h3 className="text-2xl font-semibold mb-3">Working Projects</h3>
@@ -65,7 +65,7 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="space-y-8 text-center">
-            <Image src="/story.svg" alt="Our Story" width={80} height={80} className="mx-auto mb-4" />
+            <Image src="/story.svg" alt="Our Story" width={100} height={100} className="mx-auto mb-4" />
             <h3 className="text-2xl font-semibold mb-3">Our Story</h3>
             <p className="text-muted-foreground leading-relaxed">
               Today, we serve thousands of learners worldwide, providing them with quality education

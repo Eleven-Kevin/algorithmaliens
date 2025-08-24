@@ -61,7 +61,7 @@ export default function HeroSection() {
           style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-center">
-            <Image src="/company.svg" alt="Our Company" width={80} height={80} className="mx-auto mb-4" />
+            <Image src="/company.svg" alt="Our Company" width={100} height={100} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-3 text-white">
               Our Company
             </h3>
@@ -71,7 +71,7 @@ export default function HeroSection() {
             </p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-center">
-             <Image src="/agenda.svg" alt="Our Agenda" width={80} height={80} className="mx-auto mb-4" />
+             <Image src="/agenda.svg" alt="Our Agenda" width={100} height={100} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-3 text-white">
               Our Agenda
             </h3>
@@ -81,7 +81,7 @@ export default function HeroSection() {
             </p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-center">
-            <Image src="/projects.svg" alt="Our Projects" width={80} height={80} className="mx-auto mb-4" />
+            <Image src="/projects.svg" alt="Our Projects" width={100} height={100} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-3 text-white">
               Our Projects
             </h3>
