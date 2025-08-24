@@ -4,8 +4,8 @@ export default function AboutSection() {
   return (
     <section id="about" className="relative bg-background text-foreground py-20 md:py-32">
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <Image src="/about.svg" alt="About Us" width={80} height={80} className="mx-auto mb-4" />
+        <div className="text-center mb-16">
+          <Image src="/about.svg" alt="About Us" width={100} height={100} className="mx-auto mb-4" />
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
             About Algorithm Aliens
           </h2>
@@ -16,14 +16,14 @@ export default function AboutSection() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
-          <div className="space-y-8">
+          <div className="space-y-12">
             <div className="text-center">
               <Image
                 src="/mission.svg"
                 alt="Our Mission"
-                width={64}
-                height={64}
-                className="mx-auto mb-3"
+                width={80}
+                height={80}
+                className="mx-auto mb-4"
               />
               <h3 className="text-2xl font-semibold mb-3">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -35,9 +35,9 @@ export default function AboutSection() {
               <Image
                 src="/values.svg"
                 alt="Our Values"
-                width={64}
-                height={64}
-                className="mx-auto mb-3"
+                width={80}
+                height={80}
+                className="mx-auto mb-4"
               />
               <h3 className="text-2xl font-semibold mb-3">Our Values</h3>
               <ul className="list-none space-y-2 text-muted-foreground">
@@ -51,9 +51,9 @@ export default function AboutSection() {
               <Image
                 src="/working-projects.svg"
                 alt="Working Projects"
-                width={64}
-                height={64}
-                className="mx-auto mb-3"
+                width={80}
+                height={80}
+                className="mx-auto mb-4"
               />
               <h3 className="text-2xl font-semibold mb-3">Working Projects</h3>
               <ul className="list-none space-y-2 text-muted-foreground">
@@ -65,7 +65,7 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="space-y-8 text-center">
-            <Image src="/story.svg" alt="Our Story" width={64} height={64} className="mx-auto mb-3" />
+            <Image src="/story.svg" alt="Our Story" width={80} height={80} className="mx-auto mb-4" />
             <h3 className="text-2xl font-semibold mb-3">Our Story</h3>
             <p className="text-muted-foreground leading-relaxed">
               Today, we serve thousands of learners worldwide, providing them with quality education

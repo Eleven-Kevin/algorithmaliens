@@ -60,32 +60,32 @@ export default function HeroSection() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left animate-fade-in-up"
           style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
-          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <Image src="/company.svg" alt="Our Company" width={24} height={24} className="text-white" />
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-center">
+            <Image src="/company.svg" alt="Our Company" width={80} height={80} className="mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-3 text-white">
               Our Company
             </h3>
-            <p className="text-white/80">
+            <p className="text-white/80 text-sm">
               Since 2025, we've transformed education, serving thousands with quality resources and
               career opportunities.
             </p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <Image src="/agenda.svg" alt="Our Agenda" width={24} height={24} className="text-white" />
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-center">
+             <Image src="/agenda.svg" alt="Our Agenda" width={80} height={80} className="mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-3 text-white">
               Our Agenda
             </h3>
-            <p className="text-white/80">
+            <p className="text-white/80 text-sm">
               We provide accessible education, industry-relevant certifications, and real-world
               internships to build a supportive learning community.
             </p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-            <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <Image src="/projects.svg" alt="Our Projects" width={24} height={24} className="text-white" />
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-center">
+            <Image src="/projects.svg" alt="Our Projects" width={80} height={80} className="mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-3 text-white">
               Our Projects
             </h3>
-            <p className="text-white/80">
+            <p className="text-white/80 text-sm">
               Engage with our innovative working projects. You can buy pre-designed projects or collaborate on new designs.
             </p>
           </div>
