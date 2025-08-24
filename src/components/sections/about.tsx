@@ -1,10 +1,14 @@
+import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative bg-secondary text-secondary-foreground py-20 md:py-32">
+    <section id="about" className="relative bg-background text-foreground py-20 md:py-32">
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">About Algorithm Aliens</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight flex items-center justify-center gap-3">
+            <Image src="/about.svg" alt="About Us" width={40} height={40} />
+            About Algorithm Aliens
+          </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             Founded in 2025, Algorithm Aliens emerged from a vision to transform traditional
             education into an engaging, accessible, and future-ready learning experience. We believe
@@ -14,14 +18,20 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-3">Our Mission</h3>
+              <h3 className="text-2xl font-semibold mb-3 flex items-center gap-3">
+                <Image src="/mission.svg" alt="Our Mission" width={28} height={28} />
+                Our Mission
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
                 To empower individuals with knowledge and skills that drive personal growth and
                 professional success in an ever-evolving digital world.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-3">Our Values</h3>
+              <h3 className="text-2xl font-semibold mb-3 flex items-center gap-3">
+                <Image src="/values.svg" alt="Our Values" width={28} height={28} />
+                Our Values
+              </h3>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                 <li>Excellence in Education</li>
                 <li>Innovation & Adaptability</li>
@@ -30,7 +40,10 @@ export default function AboutSection() {
               </ul>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-3">Working Projects</h3>
+              <h3 className="text-2xl font-semibold mb-3 flex items-center gap-3">
+                <Image src="/working-projects.svg" alt="Working Projects" width={28} height={28} />
+                Working Projects
+              </h3>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                 <li>Cogni Synapse Drive Shield</li>
                 <li>Serverless Url Shortner</li>

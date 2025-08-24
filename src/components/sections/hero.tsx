@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Briefcase, FileText, Target } from 'lucide-react';
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -31,8 +31,7 @@ export default function HeroSection() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="font-semibold rounded-full bg-transparent text-white border-white hover:bg-white hover:text-black"
+              className="font-semibold rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
             >
               <Link href="/resources">Explore Resources</Link>
             </Button>
@@ -63,7 +62,7 @@ export default function HeroSection() {
         >
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
             <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <FileText className="text-white" />
+              <Image src="/company.svg" alt="Our Company" width={24} height={24} className="text-white" />
               Our Company
             </h3>
             <p className="text-white/80">
@@ -73,7 +72,7 @@ export default function HeroSection() {
           </div>
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
             <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <Briefcase className="text-white" />
+              <Image src="/agenda.svg" alt="Our Agenda" width={24} height={24} className="text-white" />
               Our Agenda
             </h3>
             <p className="text-white/80">
@@ -83,7 +82,7 @@ export default function HeroSection() {
           </div>
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
             <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <Target className="text-white" />
+              <Image src="/projects.svg" alt="Our Projects" width={24} height={24} className="text-white" />
               Our Projects
             </h3>
             <p className="text-white/80">
