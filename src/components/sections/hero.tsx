@@ -32,7 +32,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="font-semibold rounded-full text-white"
+              className="font-semibold rounded-full bg-transparent text-white border-white hover:bg-white hover:text-black"
             >
               <Link href="/resources">Explore Resources</Link>
             </Button>
@@ -40,7 +40,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="font-semibold rounded-full text-white"
+              className="font-semibold rounded-full bg-transparent text-white border-white hover:bg-white hover:text-black"
             >
               <Link href="#about">About Us</Link>
             </Button>
@@ -48,7 +48,7 @@ export default function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="font-semibold rounded-full text-white"
+              className="font-semibold rounded-full bg-transparent text-white border-white hover:bg-white hover:text-black"
             >
               <Link href="https://forms.gle/1aeeAnHfuCPa2fqP7" target="_blank">
                 Request Services
@@ -61,9 +61,9 @@ export default function HeroSection() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left animate-fade-in-up"
           style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
         >
-          <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border/50">
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
             <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <FileText className="text-primary-foreground" />
+              <FileText className="text-white" />
               Our Company
             </h3>
             <p className="text-white/80">
@@ -71,9 +71,9 @@ export default function HeroSection() {
               career opportunities.
             </p>
           </div>
-          <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border/50">
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
             <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <Briefcase className="text-primary-foreground" />
+              <Briefcase className="text-white" />
               Our Agenda
             </h3>
             <p className="text-white/80">
@@ -81,9 +81,9 @@ export default function HeroSection() {
               internships to build a supportive learning community.
             </p>
           </div>
-          <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border/50">
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
             <h3 className="flex items-center gap-3 text-xl font-semibold mb-3 text-white">
-              <Target className="text-primary-foreground" />
+              <Target className="text-white" />
               Our Projects
             </h3>
             <p className="text-white/80">

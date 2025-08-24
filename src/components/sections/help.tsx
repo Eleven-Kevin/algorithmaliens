@@ -66,7 +66,7 @@ export default function HelpSection() {
         <div className="max-w-4xl mx-auto space-y-12">
           {faqs.map((category, catIndex) => (
             <div key={catIndex}>
-              <h3 className="text-2xl font-semibold mb-6 text-center text-primary-foreground">{category.category}</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-center text-primary">{category.category}</h3>
               <Accordion type="single" collapsible className="w-full bg-card p-6 rounded-lg shadow-sm">
                 {category.items.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${catIndex}-${index}`} className="border-b-border last:border-b-0">
